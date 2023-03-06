@@ -30,3 +30,37 @@ Tomcat: To deploy  application.
 • Micro Services(Spring Boot): Micro Service is an architecture that allows the developers to develop and deploy services independently.
 
 • API: API stands for application programming interface, which is a set of definitions and protocols for building and integrating application software.
+
+## File Structure
+
+```
+src
+├── main
+│   ├── java
+│   │   └── com
+│   │       └── api
+│   │           └── sportyShoes
+│   │               ├── SportyShoes.java
+│   │               ├── config
+│   │               │   ├── SpringSecurityConfig.java
+│   │               │   └── SwaggerConfig.java
+│   │               ├── controller
+│   │               │   ├── CRUDController.java
+│   │               │   └── SearchController.java
+│   │               ├── exceptionHandler
+│   │               │   └── BusinessException.java
+│   │               ├── model
+│   │               │   ├── PurchaseReport.java
+│   │               │   └── Shoe.java
+│   │               ├── repository
+│   │               │   ├── PurchaseReportRepository.java
+│   │               │   └── ShoesRepository.java
+│   │               └── service
+│   │                   ├── SportyShoesService.java
+│   │                   └── impl
+│   │                       └── SportyShoesServiceImpl.java
+│   └── resources
+│       └── application.properties
+└── test
+    ├── java
+    └── resources
