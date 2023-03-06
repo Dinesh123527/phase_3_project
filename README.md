@@ -13,7 +13,6 @@ This Project aim's to develop an E-Commerce Application where we sell the shoes 
 | Swagger-ui | 3.0.0 |
 | H2 | --- |
 | JPA | --- |
-| Spring Security Starter | --- | 
 
 
 ## File Structure
