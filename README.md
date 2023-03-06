@@ -1,83 +1,54 @@
 Sporty Shoes - SimpliLearn Phase 3 Assessment
 Technologies Used
 Java	1.8
-Spring Boot	3.3.0
+Spring Boot	2.2.10
 Lombok	---
-Swagger-ui	3.0.0
+Swagger-ui	2.7.0
 H2	---
 JPA	---
 Spring Security Starter	---
-
 File Structure
 src
 ├── main
 │   ├── java
 │   │   └── com
 │   │       └── api
-│   │           └── ecommerce
-|   |                   └── shoes
-│   │                      ├── SportyShoesApllication.java
-│   │                      ├── config
-│   │                      │   └── SwaggerConfig.java
-│   │                      ├── controller
-│   │                      │   ├── AdminController.java
-|   |                      |   └── ProductController.java
-│   │                      │   └── PurchaseReportController.java
-|   |                      |   └── UserController.java
-│   │                      ├── exceptions
-│   │                      │   └── AdminException.java
-|   |                      |   └── AdminUserNotFoundException.java
-|   |                      |   └── ExceptionController.java
-|   |                      |   └── LoginExceptio.java
-|   |                      |   └── NoUserFoundException.java
-|   |                      |   └── ProductException.java
-|   |                      |   └── ProductNotFoundException.java
-|   |                      |   └── PurchaseReportException.java
-|   |                      |   └── PurchaseReportNotFoundException.java
-|   |                      |   └── UserException.java
-│   │                      ├── model
-│   │                      │   ├── Admin.java
-│   │                      │   └── Product.java
-|   |                      |   └── PurchaseReport.java
-|   |                      |   └── User.java
-│   │                      ├── repository
-│   │                      │   ├── AdminRepository.java
-│   │                      │   └── ProductRepository.java
-|   |                      |   └── PurchaseReportRepository.java
-|   |                      |   └── UserRepository.java
-│   │                      ├── service
-│   │                      |    ├── AdminService.java
-|   |                      |    └── AdminServiceImpl.java
-|   |                      |    ├── ProductService.java
-|   |                      |    └── ProductServiceImpl.java
-|   |                      |    ├── PurchaseReportService.java
-|   |                      |    └── PurchaseReportServiceImpl.java
-|   |                      |    ├── UserService.java
-|   |                      |    └── UserServiceImpl.java
+│   │           └── sportyShoes
+│   │               ├── SportyShoes.java
+│   │               ├── config
+│   │               │   ├── SpringSecurityConfig.java
+│   │               │   └── SwaggerConfig.java
+│   │               ├── controller
+│   │               │   ├── CRUDController.java
+│   │               │   └── SearchController.java
+│   │               ├── exceptionHandler
+│   │               │   └── BusinessException.java
+│   │               ├── model
+│   │               │   ├── PurchaseReport.java
+│   │               │   └── Shoe.java
+│   │               ├── repository
+│   │               │   ├── PurchaseReportRepository.java
+│   │               │   └── ShoesRepository.java
+│   │               └── service
+│   │                   ├── SportyShoesService.java
+│   │                   └── impl
+│   │                       └── SportyShoesServiceImpl.java
 │   └── resources
 │       └── application.properties
 └── test
     ├── java
     └── resources
 
-16 directories, 31 files
-
+16 directories, 13 files
 Project Structure
 This project uses Spring Boot for Model and Controller Implementation Availaible apis are -
 
-/adminUsers 
-/adminUsers/{adminUserName}
-/login
-/products/CRUD
-/products/{id}
-/products/{price}
-/admin/purchaseReport/CRUD
-/admin/purchaseReports/{id}
-/admin/purchaseReports/{category}
-/users
-/users/{emailId}
-/loginUser
-
+/shoe (CRUD)
+/purchaseReport (CRUD)
+/shoe/all
+/purchaseReport/(category|all|dop)
 Current Implementation relies simply on String for storing order list.
 
 It can be extended to utilize many-to-many relationship b/w Shoe and PurchaseReport Entities.
+
+Also for admin authentication spring-security-starter has been used with credentials saved in application.properties file.
