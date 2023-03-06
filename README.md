@@ -2,7 +2,7 @@
 ## Project Details
 This Project aim's to develop an E-Commerce Application where we sell the shoes and keep a track on purchase reports of all the customers using Spring Boot.
 
-**## Technologies and tools Used**
+## Technologies and tools Used
 Spring Boot: To create a E-commerce project for Sporty Shoes.
 Postman: To the API request and response.
 H2 Database: To create and manage the database.
@@ -12,7 +12,7 @@ Rest-API: To create the API methods and to check the response of the object enti
 Spring Tool Suite: To write and execute the code.
 Tomcat: To deploy  application.
 
-**##Core Concepts Used in the Project**
+## Core Concepts Used in the Project
 • Object-Oriented: used to create and model objects for users and their credentials.
 
 • Databases: used to store and retrieve data.
