@@ -39,8 +39,9 @@ src
 │   ├── java
 │   │   └── com
 │   │       └── api
-│   │           └── sportyShoes
-│   │               ├── SportyShoes.java
+│   │           └── ecommerce
+|   |              └── shoes 
+│   │                  ├── SportyShoes.java
 │   │               ├── config
 │   │               │   ├── SpringSecurityConfig.java
 │   │               │   └── SwaggerConfig.java
